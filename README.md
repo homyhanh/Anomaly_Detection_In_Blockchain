@@ -1,12 +1,12 @@
-# Bài toán Phát hiện giao dịch bất thường 
+# Anomaly Detection In Blockchain
 
 
-## Mô tả: 
-Phát hiện bất thường đã là một lĩnh vực được nghiên cứu phổ biến trong một thời gian dài. Các ứng dụng của nó trong lĩnh vực tài chính đã hỗ trợ rất nhiều trong việc xác định các hoạt động đáng ngờ của tin tặc. Mặc dù với những tiến bộ trong lĩnh vực tài chính như blockchain và trí tuệ nhân tạo, nhiều trường hợp gian lận vẫn xuất hiện.
-Phạm vi đề tài này là giải quyết bài toán phân lớp nhị phân nhằm xác định xem một giao dịch Bitcoin có phải là một giao dịch bất thường hay không. Các phương pháp giải quyết bài toán được sử dụng:
-- Kỹ thuật cho việc xử lí mất cân bằng dữ liệu: Resampling, Cost-sensitive learning)
-- Mô hình để huấn luyện và phân lớp giao dịch gồm: DecisionTree, SVM, Isolation Forest, k-Means, Autoencoders sẽ được so sánh và đánh giá kết quả thu được.
+## Description: 
+Anomaly detection has been popular research for a long time. Its applications in the financial sector have greatly aided in identifying suspicious activities of hackers. Despite the advancements in the financial sector such as blockchain and artificial intelligence, many cases of fraud still appear.
+This thesis aims to solve the binary classification problem to determine if a Bitcoin transaction is an anomalous transaction. The problem-solving methods used are:
+- Techniques for handling imbalanced data including Resampling, Cost-sensitive learning.
+- Models to train and classify transactions including DecisionTree, SVM, Isolation Forest, k-Means, Autoencoders will be compared and evaluated.
 
 
-## Dữ liệu: 
-Bộ dữ liệu Bitcoin Network Transaction Metadata: https://www.kaggle.com/datasets/omershafiq/bitcoin-network-transactional-metadata
+## Data: 
+Bitcoin transaction network metadata dataset: https://www.kaggle.com/datasets/omershafiq/bitcoin-network-transactional-metadata
