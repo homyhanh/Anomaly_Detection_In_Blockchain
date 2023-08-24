@@ -7,7 +7,7 @@ option_method = st.radio(
 if option_method == 'Without handling imbalanced data method':
     col1,col2=st.columns(2)
     with col1:
-        st.image("https://github.com/homyhanh/Anomaly_Detection_In_Blockchain/assets/79818022/3d13ccee-656f-4391-bf4d-04788943f450", use_column_width='always')
+        st.image("https://github.com/homyhanh/Anomaly_Detection_In_Blockchain/assets/79818022/6aee06e4-a5d3-4a6e-a490-6578bb1809b9", use_column_width='always')
     with col2:
         st.image("https://github.com/homyhanh/Anomaly_Detection_In_Blockchain/assets/79818022/ecbeb94e-ddd0-4ceb-98b1-163cca377a76", use_column_width='always')
     st.write('\n')
