@@ -21,7 +21,7 @@ st.subheader('Datasets')
 st.image('https://github.com/homyhanh/Anomaly_Detection_In_Blockchain/assets/79818022/fe8a97cd-3b29-407a-a7a9-08a2130f7b6b')
 st.write('The Bitcoin transaction network metadata dataset is published in the master thesis “Anomaly detection in blockchain” by Shafiq, Omer. Raw data from bitcoin blockchain are used to generate this dataset. The dataset used is bitcoin blockchain data from 2011 to 2013.')
 st.write('The dataset consists of 30248134 samples and 13 features.')
-st.write(pd.read_csv('data_original.csv'))
+st.write(pd.read_csv('streamlit/data/data_original.csv'))
 
 st.header('Method')
 method = '''The problem-solving methods used are:
