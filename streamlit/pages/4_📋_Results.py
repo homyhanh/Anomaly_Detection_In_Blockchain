@@ -1,9 +1,10 @@
 import streamlit as st
 import pandas as pd
 
+st.header('Visualize evaluation metrics')
 option_result = st.radio(
     "What\'s your choice?",
-    ('Without handling imbalanced data method', 'Cost-sensitive learning', 'Resampling', 'All'))
+    ('Without handling imbalanced data method', 'Cost-sensitive learning', 'Resampling'))
 if option_result == 'Without handling imbalanced data method':
     df_without_method= {
     'accuracy': [0.9999950410165783, 0.9999915697281833, 0.9999950410165783, 0.9999950410165783],
@@ -43,5 +44,3 @@ elif option_result == 'Resampling':
     
     st.dataframe(pd.DataFrame(df_with_resampling, index = ['LR_resampling', 'DT_resampling', 'SGD_resampling','MLP_resampling']).style.format({"E": "{:.3f}"}))
     st.image('https://github.com/homyhanh/Anomaly_Detection_In_Blockchain/assets/79818022/fb68f8e6-4a31-4b2e-9b69-7ed4867cce37')
-else:
-    st.write("4")

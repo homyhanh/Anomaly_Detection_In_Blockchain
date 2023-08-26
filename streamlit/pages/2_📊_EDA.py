@@ -3,9 +3,31 @@ import pandas as pd
 
 option = st.radio(
     "What\'s your option?",
-    ('Remove unnecessary attributes', 'Analyze and normalize data'))
+    ('Feature selection', 'Analyze and normalize data'))
 
-if option == 'Remove unnecessary attributes':
+if option == 'Feature selection':
+    st.write('Removing the noisy features will help with memory, computational cost and the accuracy of your model. Also, removing features will help avoid the overfitting of model. ')
+    st.write('The dataset includes 30248134 samples and 13 features')
+    col1, col2 = st.columns(2)
+    with col1:
+        st.write('- tx_hash')
+        st.write('- indegree')
+        st.write('- outdegree')
+        st.write('- in_btc')
+        st.write('- out_btc')
+        st.write('- total_btc')
+        st.write('- mean_in_btc')
+    with col2:
+        st.write('- mean_out_btc')
+        st.write('- in_malicious')
+        st.write('- out_malicious')
+        st.write('- is_malicious')
+        st.write('- out_and_tx_malicious')
+        st.write('- all_malicious')
+    st.write('Remove features based on meaning')
+    st.write('- tx_hash: unnecessary feature')
+    st.write('- in_malicious, out_maclicious, is_malicious, all_malicious: features identified the class of the transaction')
+    st.write('After removing unnecessary attributes, the dataset is')
     st.write(pd.read_csv('C:/Users/hanhm/Anomaly_Detection_In_Blockchain/streamlit/data/data.csv'))
 else:
     st.image('https://github.com/homyhanh/Anomaly_Detection_In_Blockchain/assets/79818022/af2fa59d-cd46-40ab-8e1c-8000c564d93d')

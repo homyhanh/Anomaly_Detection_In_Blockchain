@@ -26,7 +26,7 @@ st.write(pd.read_csv('C:/Users/hanhm/Anomaly_Detection_In_Blockchain/streamlit/d
 st.header('Method')
 method = '''The problem-solving methods used are:
 
-- Techniques for handling imbalanced data including Resampling, Cost-sensitive learning.
-- Models to train and classify transactions including DecisionTree, SVM, MLP and k-Means will be compared and evaluated.'''
+- Techniques for handling imbalanced data including Cost-sensitive learning, Resampling.
+- Models to train and classify transactions including Logistic Regression (LR), DecisionTree (DT), Stochastic Gradient Descent (SGD), Multi-layer Perceptron (MLP) will be compared and evaluated.'''
 
 st.write(method)
