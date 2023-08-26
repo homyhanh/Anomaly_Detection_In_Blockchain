@@ -28,13 +28,13 @@ if option == 'Feature selection':
     st.write('- tx_hash: unnecessary feature')
     st.write('- in_malicious, out_maclicious, is_malicious, all_malicious: features identified the class of the transaction')
     st.write('After removing unnecessary attributes, the dataset is')
-    st.write(pd.read_csv('C:/Users/hanhm/Anomaly_Detection_In_Blockchain/streamlit/data/data.csv'))
+    st.write(pd.read_csv('streamlit/data/data.csv'))
 else:
     st.image('https://github.com/homyhanh/Anomaly_Detection_In_Blockchain/assets/79818022/af2fa59d-cd46-40ab-8e1c-8000c564d93d')
     st.caption('<div style="text-align: center;"><i>Figure 1. Bitcoin transaction data distribution chart</i></div>', unsafe_allow_html=True)
     st.write('\n')
     st.write('The class distribution of the dataset is highly imbalanced with 30,248,026 non-malicious data points and only 108 malicious transactions, make malicious transactions to be only approximately 0.00035% of whole data. ')
-    unstranformed_data = pd.read_csv('C:/Users/hanhm/Anomaly_Detection_In_Blockchain/streamlit/data/untransformed_data.csv')
+    unstranformed_data = pd.read_csv('streamlit/data/untransformed_data.csv')
     unstranformed_data.index = ['count', 'mean', 'std','min', '25%', '50%', '75%', 'max']
     st.write(unstranformed_data)
     st.caption('<div style="text-align: center;"><i>Table 1. Untransformed data statistics.</i></div>', unsafe_allow_html=True)
